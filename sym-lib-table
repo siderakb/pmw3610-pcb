@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "pmw3610_pcb")(type "KiCad")(uri "${KIPRJMOD}/pmw3610_pcb.kicad_sym")(options "")(descr ""))
+)
