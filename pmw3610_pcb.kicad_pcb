@@ -9,7 +9,7 @@
     (title "PMW3610 PCB")
     (rev "1.0")
     (company "SideraKB")
-    (comment 1 "MIT License, Open Source Hardware")
+    (comment 1 "Open Source Hardware, CERN-OHL-P v2")
     (comment 2 "PMW3610DM-SUDU laser mouse sensor breakout board")
   )
 
