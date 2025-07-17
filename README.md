@@ -114,6 +114,10 @@ Most of the current MCU IOs are 3.3V, please use ***3.3V Logic*** config for thi
 
 *The above table is for reference only.*
 
+## Changelog
+
+[CHANGELOG](/CHANGELOG.md)
+
 ## License
 
 Available under the [CERN-OHL-P v2](/LICENSE) permissive license.
