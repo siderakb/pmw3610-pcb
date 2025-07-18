@@ -29,15 +29,15 @@ Online preview available [here](https://kicanvas.org/?github=https%3A%2F%2Fgithu
 
 | Ref        | Value             | Footprint       |
 | ---------- | ----------------- | --------------- |
-| C1         | 3.3uF/16V         | SMD 0805        |
+| C1         | 3.3μF/16V         | SMD 0805\*      |
 | C2, C3, C4 | 100nF             | SMD 0603        |
 | C5, C7     | 10nF              | SMD 0603        |
-| C6         | 10uF              | SMD 0805        |
-| C8, C9     | 1uF               | SMD 0603        |
+| C6         | 10μF              | SMD 0805\*      |
+| C8, C9     | 1μF               | SMD 0603        |
 | C10        | *DNI*             | SMD 0603        |
 | R1         | 10k               | SMD 0603        |
-| U1         | PMW3610           | DIP-16          |
-| U2         | TLV74318          | SOT-23-5        |
+| U1         | PMW3610           | 16-DIP          |
+| U2         | TLV74318\*        | SOT-23-5        |
 | J1         | 2.54mm Pin header | 2.54mm 1x07     |
 | J2         | 8P 0.5mm FFC/FPC  | AFC01-S08FCA-00 |
 
@@ -49,6 +49,7 @@ Online preview available [here](https://kicanvas.org/?github=https%3A%2F%2Fgithu
   - Dielectric material: X7R
   - Tolerance: +/- 10%
   - Rated working voltage: 6.3 \~ 16V
+  - To accommodate the recommended capacitance values (in μF range), `C1` and `C6` use an 0805 footprint. If the recommended spec aren't critical for your application, you can opt for an 0603 footprint instead.
 
 ### Board Characteristics
 
@@ -83,13 +84,14 @@ This circuit is designed with a VDD of 1.8V. VDDIO is the voltage used by the IO
 
 Most of the current MCU IOs are 3.3V, please use ***3.3V Logic*** config for this MCU. This board does NOT support 5V logic. If using a 5V MCU, please add a level shifter such as the TXS0108E.
 
-| Config           |    JP1    | VIN Min. | VIN Max. |
-| :--------------- | :-------: | :------- | :------- |
-| ***3.3V Logic*** | `[1-2 3]` | 3.3V     | 3.3V     |
-| ***1.8V Logic*** | `[1 2-3]` | 2.1V\*   | 5.5V     |
-| ***LDO Bypass*** | `[1-2-3]` | 1.7V     | 2.1V     |
+| Config             |    JP1    | VIN Min. | VIN Max. |
+| :----------------- | :-------: | :------- | :------- |
+| ***3.3V Logic***   | `[1-2 3]` | 3.3V     | 3.3V     |
+| ***1.8V Logic***   | `[1 2-3]` | 2.1V\*   | 5.5V     |
+| ***LDO Bypass***\* | `[1-2-3]` | 1.7V     | 2.1V     |
 
-*2.1V = 1.8V + 0.3V, where 0.3V is the dropout voltage of the TLV74318 (at Tj ≤ 125ºC).*
+- 2.1V = 1.8V + 0.3V, where 0.3V is the dropout voltage of the TLV74318 (at Tj ≤ 125ºC).
+- Do not install `U2`, `C8`, `C9`, `C10` in the ***LDO Bypass*** config.
 
 ### Jumper
 
@@ -99,20 +101,21 @@ Most of the current MCU IOs are 3.3V, please use ***3.3V Logic*** config for thi
 | `[1 2-3]` | 2 and 3 shorted; 1 *NC* | VDDIO = VDD = 1.8V             |
 | `[1-2-3]` | 1, 2 and 3 shorted      | VDDIO = VDD = VIN (LDO bypass) |
 
-*NC: Not Connected.*
+- NC: Not Connected.
 
 ## PMW3610 Spec
 
-| Parameter                                    | Min.  | Typ.  | Max.  | Unit |
-| :------------------------------------------- | :---: | :---: | :---: | :--- |
-| VDD                                          |  1.7  |  1.8  |  2.1  | V    |
-| VDDIO                                        |  1.7  |  1.8  |  3.3  | V    |
-| SCLK Frequency                               |       |       |   2   | MHz  |
-| Distance from lens reference plan to surface |  2.2  |  2.4  |  2.6  | mm   |
-| Operating Temperature                        |   0   |       |  40   | ºC   |
-| Resolution                                   |  200  |       | 3200  | cpi  |
+| Parameter             | Min.  | Typ.  | Max.  | Unit |
+| :-------------------- | :---: | :---: | :---: | :--- |
+| VDD                   |  1.7  |  1.8  |  2.1  | V    |
+| VDDIO                 |  1.7  |  1.8  |  3.3  | V    |
+| SCLK Frequency        |       |       |   2   | MHz  |
+| Working Distance\*    |  2.2  |  2.4  |  2.6  | mm   |
+| Operating Temperature |   0   |       |  40   | ºC   |
+| Resolution            |  200  |       | 3200  | cpi  |
 
-*The above table is for reference only.*
+- The above table is for reference only.
+- *Working Distance* is the distance from lens reference plane (i.e. the lowest plane of the lens) to tracking surface (e.g. mousepad or trackball).
 
 ## Changelog
 
