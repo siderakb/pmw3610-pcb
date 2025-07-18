@@ -22,6 +22,7 @@ KiCad `v9.0.2`
 - Change the footprint of `C1` and `C6` from 0603 to 0805 to make it easier to find large capacity capacitors with suitable specifications.
 - `R1` nRESET pull up resistor is not longer DNI.
 - Update PMW3610 footprint.
+- Increase the copper to board edge clearance to 0.4mm for better V-cut panelization
 
 ### Added
 
