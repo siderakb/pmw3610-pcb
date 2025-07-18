@@ -21,6 +21,7 @@ KiCad `v9.0.2`
 - Pin 8 of `J2` FFC/FPC connector changed from NC to nRESET.
 - Change the footprint of `C1` and `C6` from 0603 to 0805 to make it easier to find large capacity capacitors with suitable specifications.
 - `R1` nRESET pull up resistor is not longer DNI.
+- Update PMW3610 footprint.
 
 ### Added
 
