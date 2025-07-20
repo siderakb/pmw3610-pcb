@@ -406,7 +406,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x08"
+		(symbol "Connector_Generic_MountingPin:Conn_01x08_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -422,12 +422,13 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x08"
-				(at 0 -12.7 0)
+			(property "Value" "Conn_01x08_MountingPin"
+				(at 1.27 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -448,7 +449,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -466,7 +467,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -475,7 +476,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x08_1_1"
+			(symbol "Conn_01x08_MountingPin_1_1"
 				(rectangle
 					(start -1.27 8.89)
 					(end 1.27 -11.43)
@@ -573,6 +574,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -12.192) (xy 1.016 -12.192)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -11.811 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
 					)
 				)
 				(pin passive line
@@ -712,6 +733,24 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2362,6 +2401,10 @@
 	(no_connect
 		(at 243.84 66.04)
 		(uuid "bbc0c4ec-15f4-4507-a99b-5966525a45e3")
+	)
+	(no_connect
+		(at 248.92 81.28)
+		(uuid "c49aebc7-7659-4fff-a686-eaf9902056ee")
 	)
 	(wire
 		(pts
@@ -4344,7 +4387,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
+		(lib_id "Connector_Generic_MountingPin:Conn_01x08_MountingPin")
 		(at 248.92 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4386,12 +4429,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 248.92 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "JLCPCB Part #" "C2856797"
@@ -4435,6 +4479,9 @@
 		)
 		(pin "8"
 			(uuid "9b58b5af-e919-49d8-8c17-40d05a7c1dda")
+		)
+		(pin "MP"
+			(uuid "dc964a80-532e-4543-b1fb-4c5f71789ee5")
 		)
 		(instances
 			(project "pmw3610_pcb"
