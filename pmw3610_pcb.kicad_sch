@@ -4438,7 +4438,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C19273926"
+		(property "JLCPCB Part #" "C262657"
 			(at 248.92 66.04 0)
 			(effects
 				(font
@@ -4447,7 +4447,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR. Part #" "HC-FPC-0.5-8P-FH20"
+		(property "MFR. Part #" "AFC01-S08FCA-00"
 			(at 248.92 66.04 0)
 			(effects
 				(font

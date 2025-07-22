@@ -3755,7 +3755,7 @@
 				(justify mirror)
 			)
 		)
-		(property "JLCPCB Part #" "C19273926"
+		(property "JLCPCB Part #" "C262657"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3768,7 +3768,7 @@
 				)
 			)
 		)
-		(property "MFR. Part #" "HC-FPC-0.5-8P-FH20"
+		(property "MFR. Part #" "AFC01-S08FCA-00"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
