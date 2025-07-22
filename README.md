@@ -49,7 +49,7 @@ Online preview available [here](https://kicanvas.org/?github=https%3A%2F%2Fgithu
   - Dielectric material: X7R
   - Tolerance: +/- 10%
   - Rated working voltage: 6.3 \~ 16V
-  - To accommodate the recommended capacitance values (in μF range), `C1` and `C6` use an 0805 footprint. If the recommended spec aren't critical for your application, you can opt for an 0603 footprint instead.
+  - To accommodate the recommended capacitance values (in μF range), `C1` and `C6` use an 0805 footprint. If the recommended spec aren't critical for your application, you can opt for an 0603 package instead.
 
 ### Board Characteristics
 

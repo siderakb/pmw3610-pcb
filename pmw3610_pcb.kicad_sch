@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "PMW3610 PCB")
-		(rev "1.1")
+		(rev "2.0")
 		(company "SideraKB")
 		(comment 1 "Open Source Hardware, CERN-OHL-P v2")
 		(comment 2 "PMW3610DM-SUDU laser mouse sensor breakout board")
@@ -4438,7 +4438,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C2856797"
+		(property "JLCPCB Part #" "C19273926"
 			(at 248.92 66.04 0)
 			(effects
 				(font
@@ -4447,7 +4447,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR. Part #" "FPC-05F-8PH20"
+		(property "MFR. Part #" "HC-FPC-0.5-8P-FH20"
 			(at 248.92 66.04 0)
 			(effects
 				(font

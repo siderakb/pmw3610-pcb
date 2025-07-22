@@ -17,16 +17,17 @@ KiCad `v9.0.2`
 
 ### Changed
 
-- `J1` pin header connector change from 1x07 to 1x08, add nRESET pin.
+- `J1` pin header connector changed from 1x07 to 1x08, adding the nRESET pin.
 - Pin 8 of `J2` FFC/FPC connector changed from NC to nRESET.
-- Change the footprint of `C1` and `C6` from 0603 to 0805 to make it easier to find large capacity capacitors with suitable specifications.
-- `R1` nRESET pull up resistor is not longer DNI.
-- Update PMW3610 footprint.
-- Increase the copper to board edge clearance to 0.4mm for better V-cut panelization
+- Changed the `J2` FFC/FPC connector to the top layer,
+- Changed the footprint of `C1` and `C6` from 0603 to 0805 to make it easier to find large-capacity capacitors with recommended specifications.
+- `R1` nRESET pull-up resistor is no longer DNI
+- Updated PMW3610 footprint.
+- Increased the copper-to-board edge clearance to 0.4mm for better V-cut panelization.
 
 ### Added
 
-- Add the manufacturer and JLCPCB part number to each component.
+- Added the manufacturer and JLCPCB part number to each component for PCBA.
 
 ### Removed
 
