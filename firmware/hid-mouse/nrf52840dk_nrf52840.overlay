@@ -1,0 +1,59 @@
+// To get started, press Ctrl+Space (or Option+Esc) to bring up the completion menu and view the available nodes.
+
+// You can also use the buttons in the sidebar to perform actions on nodes.
+// Actions currently available include:
+
+// * Enabling / disabling the node
+// * Adding the bus to a bus
+// * Removing the node
+// * Connecting ADC channels
+
+// For more help, browse the DeviceTree documentation at https: //docs.zephyrproject.org/latest/guides/dts/index.html
+// You can also visit the nRF DeviceTree extension documentation at https: //docs.nordicsemi.com/bundle/nrf-connect-vscode/page/guides/ncs_configure_app.html#devicetree-support-in-the-extension
+
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+&pinctrl {
+    spi1_default_alt: spi1_default_alt{
+        group1{
+            psels = <NRF_PSEL(SPIM_SCK, 0, 30)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 31)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 31)>; /* 3-pin SPI: note that MISO shares same pad? Verify wiring */
+                };
+    };
+    spi1_sleep_alt: spi1_sleep_alt{
+        group1{
+            psels = <NRF_PSEL(SPIM_SCK, 0, 30)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 31)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 31)>; /* 3-pin SPI */
+                    low-power-enable;
+        };
+    };
+};
+
+&spi1 {
+	compatible = "nordic,nrf-spim";
+    status = "okay";
+    cs-gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;
+    pinctrl-0 = <&spi1_default_alt>;
+    pinctrl-1 = <&spi1_sleep_alt>;
+    pinctrl-names = "default", "sleep";
+
+    pmw3610: pmw3610@0 {
+        // https: //docs.nordicsemi.com/bundle/ncs-3.1.0/page/zephyr/build/dts/api/bindings/input/pixart_pmw3610.html
+        compatible = "pixart,pmw3610";
+        status = "okay";
+        reg = <0>; /* First CS pin */
+        spi-max-frequency = <2000000>;
+
+        motion-gpios = <&gpio0 28 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        // reset-gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
+
+        zephyr,axis-x = <INPUT_REL_X>;
+        zephyr,axis-y = <INPUT_REL_Y>;
+        res-cpi = <1600>;
+        smart-mode;
+        // invert-x;
+        invert-y;
+    };
+};
