@@ -1,4 +1,8 @@
 {
+  "nrf-connect.applications": [
+    "${workspaceFolder}/firmware/hid-mouse"
+  ],
+  "C_Cpp.clang_format_style": "file:${workspaceFolder}/firmware/.clang-format",
   "cSpell.words": [
     "JLCPCB",
     "kicad",
@@ -7,5 +11,5 @@
     "SDIO",
     "SUDU",
     "VDDIO"
-  ]
+  ],
 }
