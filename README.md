@@ -117,6 +117,15 @@ Most of the current MCU IOs are 3.3V, please use ***3.3V Logic*** config for thi
 - The above table is for reference only.
 - *Working Distance* is the distance from lens reference plane (i.e. the lowest plane of the lens) to tracking surface (e.g. mousepad or trackball).
 
+### Axis Direction
+
+The raw data direction is defined as:
+
+- X-axis: Right is positive, left is negative.
+- Y-axis: Up is positive, down is negative.
+
+However, the Y-axis of the mouse is typically inverted in the OS because the origin is at the top-left corner of the screen. For this reason, the "invert Y-axis" option is commonly enabled.
+
 ## Changelog
 
 [CHANGELOG](/CHANGELOG.md)
