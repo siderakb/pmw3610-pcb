@@ -11,7 +11,9 @@ Types of changes:
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
-## Unreleased
+<!-- ## Unreleased -->
+
+## 2.0.0 - 2025-09-07
 
 KiCad `v9.0.2`
 
