@@ -1,4 +1,5 @@
 /*
+ * Copyright (c) 2025 ZiTe SideraKB
  * Copyright (c) 2018 qianfan Zhao
  * Copyright (c) 2018, 2023 Nordic Semiconductor ASA
  *

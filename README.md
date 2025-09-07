@@ -121,6 +121,11 @@ Most of the current MCU IOs are 3.3V, please use ***3.3V Logic*** config for thi
 
 [CHANGELOG](/CHANGELOG.md)
 
+## Firmware
+
+You can use this [firmware](./firmware/hid-mouse/) with the nRF52840 to test whether the PMW3610 PCB is functioning properly.
+
 ## License
 
-Available under the [CERN-OHL-P v2](/LICENSE) permissive license.
+- **Hardware**: Available under the [CERN-OHL-P v2](/LICENSE) permissive license.
+- **Firmware**: Licensed under [Apache 2.0](https://spdx.org/licenses/Apache-2.0.html) as identified by the SPDX in each file.
