@@ -40,7 +40,6 @@
     pinctrl-names = "default", "sleep";
 
     pmw3610: pmw3610@0 {
-        // https: //docs.nordicsemi.com/bundle/ncs-3.1.0/page/zephyr/build/dts/api/bindings/input/pixart_pmw3610.html
         compatible = "pixart,pmw3610";
         status = "okay";
         reg = <0>; /* First CS pin */
