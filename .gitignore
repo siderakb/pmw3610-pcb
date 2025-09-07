@@ -40,3 +40,7 @@ fp-info-cache
 # JLCPCB tool
 jlcpcb/
 *.zip
+
+# OS
+.DS_Store
+Thumbs.db

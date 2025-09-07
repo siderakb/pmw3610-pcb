@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/badge/License-CERN--OHL--P_v2-limegreen)](https://github.com/siderakb/pmw3610-pcb/blob/main/LICENSE)
 [![kicad](https://img.shields.io/badge/KiCad-v9-orange)](https://github.com/siderakb/pmw3610-pcb/blob/main/pmw3610_pcb.kicad_pro)
 
-<img src="https://i.imgur.com/gLDkCWS.jpeg" width="450">
+<img src="https://raw.githubusercontent.com/siderakb/pmw3610-pcb/refs/heads/main/fig/pcb_rev1_and_2.webp" width="450">
 
 Breakout board for the [PixArt PMW3610DM-SUDU](https://www.pixart.com/products-detail/21/PMW3610DM-SUDU), a low-power laser mouse sensor. An alternative to the [PMW3360 PCB](https://github.com/siderakb/pmw3360-pcb) for low-power applications.
 
