@@ -28,18 +28,17 @@ fp-info-cache
 *.xml
 
 # Exported Gerber
+jlcpcb/
+production/
 [Gg]erber/
 *.g[tb][lops]
 *.gbr
 *.gm1
 *.drl
+*.zip
 
 # Backup
 *-backups/
-
-# JLCPCB tool
-jlcpcb/
-*.zip
 
 # OS
 .DS_Store
