@@ -2,6 +2,7 @@
 
 This is a NCS (ZephyrRTOS) sample using the PMW3610 motion sensor with the nRF52840-DK. Refer to [pixart,pmw3610 (on spi bus) — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/build/dts/api/bindings/input/pixart%2Cpmw3610.html).
 
+Setup NCS: [nRF Connect SDK Fundamentals - Nordic Developer Academy](https://academy.nordicsemi.com/courses/nrf-connect-sdk-fundamentals/)
 
 Pin mapping:
 
