@@ -13,6 +13,12 @@ Types of changes:
 
 <!-- ## Unreleased -->
 
+## 2.1.0 - 2025-10-18
+
+### Added
+
+- Added jumper `JP2` to connect `J2` FFC/FPC connector and nRESET pin.
+
 ## 2.0.0 - 2025-09-07
 
 KiCad `v9.0.2`

@@ -27,7 +27,9 @@ Online preview available [here](https://kicanvas.org/?github=https%3A%2F%2Fgithu
 
 ## Docs
 
-📖 For more detailed infomation, please refer to the [docs](https://siderakb.ziteh.dev/mouse-sensors/pmw3610/rev2/) ([alternative link](https://github.com/siderakb/siderakb-website/blob/starlight/main/src/content/docs/mouse-sensors/pmw3610/rev2.md)).
+📖 For more detailed information, please refer to the [docs](https://siderakb.ziteh.dev/mouse-sensors/pmw3610/rev2/) ([alternative link](https://github.com/siderakb/siderakb-website/blob/starlight/main/src/content/docs/mouse-sensors/pmw3610/rev2.md)).
+
+[Changelog](./CHANGELOG.md)
 
 ## License
 
